@@ -1,0 +1,49 @@
+.testimonal .items {
+  padding: 30px;
+  transition: 0.5s;
+  border: 2px solid transparent; /* Add a border with transparent color initially */
+}
+
+.testimonal .img {
+  position: relative;
+}
+.testimonal img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonal i {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  background-color: #E72929;
+  color: #fff;
+}
+.testimonal .name {
+  margin: 25px;
+}
+.testimonal .name h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.testimonal .name span {
+  color: #E72929;
+}
+.testimonal p {
+  margin-top: 20px;
+  color: grey;
+  transition: 0.5s;
+}
+.testimonal .items:hover {
+  border-color: #E72929; /* Change only the border color on hover */
+  color: #E72929; /* Change the text color on hover */
+  cursor: pointer;
+}
+.testimonal .items:hover span,
+.testimonal .items:hover p {
+  color: #E72929; /* Change the text color inside items on hover */
+}
+.testimonal .items:hover i {
+  background-color: #E72929;
+  color: #fff; /* Change the icon background and color on hover */
+}

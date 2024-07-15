@@ -1,0 +1,74 @@
+.login-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 40px; /* Increased padding for larger size */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 15px; /* Rounded edges */
+    width: 400px; /* Set a fixed width for the form */
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #E72929; /* Red color for the close button */
+  }
+  
+  .login-form-popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form-popup h2 {
+    text-align: center;
+    color: #E72929; /* Red theme for the header */
+    margin-bottom: 20px;
+  }
+  
+  .login-form-popup label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #E72929; /* Red theme for the labels */
+  }
+  
+  .login-form-popup input,
+  .login-form-popup select {
+    padding: 10px; /* Increased padding for larger size */
+    border: 1px solid #E72929; /* Red border */
+    border-radius: 5px; /* Slightly rounded input fields */
+    outline: none;
+    font-size: 16px;
+    width: 60%; /* Adjust width for alignment */
+    text-align: right; /* Right-align the text inside the input */
+  }
+  
+  .login-form-popup button {
+    padding: 15px;
+    background-color: #E72929; /* Red background for the button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button */
+    font-size: 16px;
+  }
+  
+  .login-form-popup button:hover {
+    background-color: #d02626; /* Darker red on hover */
+  }
+  
+  .login-form-popup input::placeholder,
+  .login-form-popup select {
+    color: #ccc; /* Placeholder color */
+  }
+  

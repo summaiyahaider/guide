@@ -1,0 +1,82 @@
+.undergraduate-page {
+  padding: 20px 80px 80px 80px;
+}
+
+.undergraduate-page h1 {
+  margin-bottom: 20px; /* Adds space between the heading and the paragraph */
+}
+
+.undergraduate-page h2 {
+  margin-bottom: 20px; /* Adds space between the heading and the paragraph */
+}
+
+.undergraduate-page h3 {
+  margin-bottom: 20px; /* Adds space between the heading and the paragraph */
+}
+
+.undergraduate-page h4 {
+  margin-bottom: 20px; /* Adds space between the heading and the paragraph */
+}
+
+.undergraduate-page p {
+  margin-bottom: 20px; /* Space between the paragraph and the cards */
+  text-align: justify; /* Justifies the paragraph alignment */
+  line-height: 1.6; /* Increases line spacing */
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer; /* Makes the card look clickable */
+}
+
+.course-card:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+  background-color: rgb(218, 90, 90); /* Changes background color to red on hover */
+  color: white; /* Changes text color to white on hover */
+}
+
+.course-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.course-card h4 {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.course-details {
+  margin-top: 10px;
+}
+
+.course-details p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.course-details p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Ensure the text within the card changes to white when hovered */
+.course-card:hover h3,
+.course-card:hover h4,
+.course-card:hover .course-details p,
+.course-card:hover .course-details p strong {
+  color: white;
+}
